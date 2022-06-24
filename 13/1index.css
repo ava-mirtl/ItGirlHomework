@@ -1,0 +1,23 @@
+* {
+  background-color: grey;
+  color: azure;
+  font-size: larger;
+}
+button,
+input {
+  background-color: rgb(61, 66, 66);
+  padding: 15px 30px;
+  margin: 10px 0;
+  border-radius: 15px;
+}
+button:active {
+  background-color: azure;
+  color: rgb(61, 66, 66);
+}
+input {
+  min-width: 700px;
+}
+.active {
+  background-color: orange;
+  color: gray;
+}

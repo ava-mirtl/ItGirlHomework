@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css">
+    <title>price calc</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1 class="h1">Расчет стоимости котомобиля</h1>
+        <label for="auto" class="h2">Выберите марку котомобиля<br>
+            <select name="auto" id="auto" class="select">
+                <option value="mini">Mini Koter</option>
+                <option value="merc">Mercedes Kotz</option>
+                <option value="bmw">BMW cat series</option>
+                <option value="audi">Audi cat5</option>
+            </select>
+        </label>
+        <div>Линия:</div>
+        <input type="radio" id="business" class="line" name="line" value="8000">
+        <label for="line">Business</label><br>
+        <input type="radio" id="comfort" class="line" name="line" value="5000">
+        <label for="line">Comfort</label><br>
+        <input type="radio" id="sport" class="line" name="line" value="10000">
+        <label for="line">Sport</label>
+        <div class="cont">
+            <div>Опции:</div>
+            <label for="option">Адаптивный кото-контроль
+                <input type="checkbox" class="checkbox" name="option" value="1700">
+            </label>
+            <label for="option">Ассистент сохранения тыгыдык
+                <input type="checkbox" class="checkbox" name="option" value="1000">
+            </label>
+            <label for="option">Камеры обзора 360°
+                <input type="checkbox" class="checkbox" name="option" value="600">
+            </label>
+            <label for="option">Ассистент перестроения
+                <input type="checkbox" class="checkbox" name="option" value="800">
+            </label>
+            <label for="option">Комфортный мурк
+                <input type="checkbox" class="checkbox" name="option" value="3000">
+            </label>
+            <label for="option">Парковочный ассистент
+                <input type="checkbox" class="checkbox" name="option" value="1500">
+            </label>
+        </div>
+        <button id="submit">Рассчитать</button>
+        <label for="price">Итоговая стоимость:
+            <input type="text" id="price" value="">
+        </label>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+
+</html>

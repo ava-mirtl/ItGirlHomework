@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: fit-content;
+  margin: 5px;
+  margin-left: 42px;
+}
+.date,
+.txt,
+li {
+  text-align: center;
+  padding: 5px;
+  color: rgb(55, 55, 55);
+  width: 96%;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.txt {
+  width: 96%;
+  min-height: 10vw;
+  max-height: fit-content;
+}
+#add {
+  margin: 5px;
+}
+.none {
+  display: none;
+}
+li {
+  text-align: left;
+  list-style: none;
+  margin-top: 10px;
+  width: 29vw;
+}
+button {
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 40px;
+  width: 29.5vw;
+  margin-top: 5px;
+}
+#clearAll {
+  margin-left: 42px;
+}

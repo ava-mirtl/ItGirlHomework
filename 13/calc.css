@@ -1,0 +1,51 @@
+* {
+  background-color: grey;
+  color: azure;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+}
+button,
+input {
+  background-color: rgb(61, 66, 66);
+  padding: 15px 30px;
+  margin: 10px 0;
+  border-radius: 15px;
+  max-width: 100px;
+}
+button {
+  width: 85px;
+}
+.number,
+input {
+  font-size: large;
+}
+.input {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.input1,
+.input2 {
+  margin: 0 2%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1% 5%;
+  padding: 1%;
+  border: 3px solid orange;
+  width: fit-content;
+  border-radius: 5%;
+  text-align: center;
+}
+.header {
+  margin: 6% 0;
+}
+div,
+p {
+  background-color: rgb(110, 109, 109);
+}
+.active {
+  background-color: orange;
+  color: gray;
+}

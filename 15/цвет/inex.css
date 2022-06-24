@@ -1,0 +1,27 @@
+.cont {
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+}
+.red {
+  background: linear-gradient(
+    283deg,
+    rgba(254, 255, 15, 0.9136029411764706) 10%,
+    rgba(232, 132, 0, 0.8855917366946778) 70%
+  );
+}
+.black {
+  color: #fff;
+  background: linear-gradient(
+    126deg,
+    rgba(0, 0, 0, 0.9136029411764706) 35%,
+    rgba(255, 255, 255, 0.8855917366946778) 70%
+  );
+}
+.sweet {
+  background: linear-gradient(
+    19deg,
+    rgba(255, 131, 131, 0.9136029411764706) 66%,
+    rgba(149, 252, 74, 0.8855917366946778) 85%
+  );
+}

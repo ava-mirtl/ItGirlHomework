@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat question</title>
+</head>
+
+<body>
+    77 lines (69 sloc) 3.2 KB
+    <!DOCTYPE html>
+    <html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Кто твой кот?</title>
+        <style>
+            input:required:valid {
+                border-color: greenyellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <h1>Раскажи про своего кота!</h1>
+            <div>
+                <label for="name">Кличка питомца:</label>
+                <input type="text" id="name" title="Это поле является обязательным" required />*
+            </div>
+            <div>
+                <label for="age">Возраст питомца:</label>
+                <input type="number" id="age" max="25" />
+            </div>
+            <div>
+                <label for="owner">Имя владельца:</label>
+                <input type="text" id="owner" title="Это поле является обязательным" required />*
+            </div>
+            <div>
+                <label for="contact">Контакты владельца:</label>
+                <input type="email" id="email" title="Это поле является обязательным" required placeholder="email" />*
+            </div>
+            <div> Порода:
+                <select id="breed">
+                    <option value="" selected="selected">-</option>
+                    <option value="персидская">персидская</option>
+                    <option value="британская">британская</option>
+                    <option value="сиамская">сиамская</option>
+                    <option value="благородная дворовая">благородная дворовая</option>
+                    <option value="другая порода">другая порода</option>
+                </select>
+            </div>
+            <div>
+                <p>Какой корм:</p>
+                <label><input type="checkbox" name="meal" value="сухой" />Сухой корм</label>
+                <label><input type="checkbox" name="meal" value="влажный" />Влажный корм</label>
+                <label><input type="checkbox" name="meal" value="натуральный" />Натуральный корм</label>
+            </div>
+            <div> Пол:<br>
+                Самка<input type="radio" name="sex" value="самка">
+                Самец<input type="radio" name="sex" value="самец">
+            </div>
+
+            <div>Комментарии:<br>
+                <textarea rows="10" cols="30"></textarea>
+            </div>
+            <div>Приложи фотографию своего питомца</div>
+            <input type="file" /><br>
+
+            <button id="ok">Сохранить</button>
+            <input type="reset" value="Очистить форму" />
+        </form>
+
+        <script src="./cat.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>

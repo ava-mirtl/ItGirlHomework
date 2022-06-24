@@ -1,0 +1,25 @@
+* {
+  margin: 0 0;
+  box-sizing: border-box;
+}
+.conteiner {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 188, 188);
+  background: linear-gradient(
+    165deg,
+    rgba(255, 188, 188, 0.9724264705882353) 57%,
+    rgba(157, 252, 163, 1) 74%
+  );
+}
+.select,
+#price,
+#submit {
+  background-color: rgba(157, 252, 163, 1);
+  padding: 1%;
+  border-radius: 5px;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+}

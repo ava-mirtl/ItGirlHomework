@@ -15,20 +15,20 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   text-align: center;
 }
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 45em;
+  width: 95vw;
   align-self: center;
 }
 .card__content {
   border: 5px solid #fff;
-  height: 15em;
-  width: 20em;
+  height: 400px;
+  width: 45vw;
 }
 .card__content:hover {
   cursor: pointer;
@@ -59,6 +59,56 @@ h1 {
   background-image: none;
   background-color: rgb(233, 231, 231);
   border: 5px solid #fff;
-  height: 35em;
-  width: 45em;
+  line-height: 1.2;
+  text-align: left;
+  height: fit-content;
+  min-height: 400px;
+  padding: 10px;
+  font-weight: 600;
+}
+.card__hero-name {
+  font-size: larger;
+  font-weight: 900;
+  text-align: center;
+}
+
+/*-------------------------rating--------*/
+.rating-area {
+  overflow: hidden;
+  width: 240px;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
 }

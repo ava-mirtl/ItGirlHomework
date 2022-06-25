@@ -29,6 +29,7 @@ h1 {
   border: 5px solid #fff;
   height: 400px;
   width: 45vw;
+  margin-top: 20px;
 }
 .card__content:hover {
   cursor: pointer;

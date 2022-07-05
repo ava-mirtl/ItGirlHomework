@@ -9,7 +9,8 @@ btn.addEventListener("click", function (event) {
   checkEmail(email);
   checkPass(password);
   checkAge(age);
-  if (msg1 == "" & msg2 == "" & msg3 == "") {
+  if (mailTest(email) & ageTest(age) & !passwordTest(password)) {
+    console.log("yes");
    let id = Math.round(Math.random())*1000
    user = {
     id: id, 
@@ -37,7 +38,7 @@ function checkPass(password) {
     msg2.innerHTML =
       "Слишком короткий пароль. Он должен содержать не менее 6 символов.";
   }
-  else if (password.value.match(/^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}$/)){
+  else if (!passwordTest(password)){
     msg2.innerHTML = ""
   }
   else  {
@@ -59,6 +60,9 @@ function checkAge(age) {
   else {
     msg3.innerHTML = "";
   }
+}
+function passwordTest(password) {
+  return RegExp("^[0-9]+$/^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}$/").test(password.value);
 }
 
 function ageTest(age) {
